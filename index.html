@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styleDoc.css">
+  </head>
+  <body>
+    <div id="options-container">
+      <p>Table of Contents</p>
+      <div id="toc">     
+      </div>
+      <div id="langs">
+      </div>
+    </div>
+      <div id="content">
+	<p>Content goes here</p>
+      </div>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
+    <script src="lib/markdown-extender.js"></script>
+    <script>
+	var apidoc = new ApiDoc({
+                        dest: 'content', 
+			url: 'test2.md'
+                        });
+      apidoc.urlToHTML()
+      setTimeout(function(){generateTOC('test')}, 350);
+    </script>
+  </body>
+  <script>
+      setTimeout(function(){toggleCodeLang("HTTP")}, 350);
+      setTimeout(function(){groupCodeExamples()}, 350);
+      setTimeout(function(){generateLangOptions(["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"])}, 200);
+  </script>
+</html>
