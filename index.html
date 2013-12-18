@@ -2,32 +2,24 @@
 <html>
   <head>
     <link rel="stylesheet" type="text/css" href="styleDoc.css">
+    <script src="contrib/showdown/src/showdown.js"></script>
+    <script src="lib/markdown-extender.js"></script>
   </head>
-  <body>
+  <body onload="apidoc.toc(), apidoc.langs()">
     <div id="options-container">
-      <p>Table of Contents</p>
-      <div id="toc">     
-      </div>
-      <div id="langs">
-      </div>
     </div>
       <div id="content">
 	<p>Content goes here</p>
       </div>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/showdown/0.3.1/showdown.min.js"></script>
-    <script src="lib/markdown-extender.js"></script>
     <script>
 	var apidoc = new ApiDoc({
                         dest: 'content', 
-			url: 'test2.md'
+			url: 'test2.md',
+			toc: true,
+			langs: ["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"] 
                         });
-      apidoc.urlToHTML()
-      setTimeout(function(){generateTOC('test')}, 350);
+      apidoc.urlToHTML();
     </script>
   </body>
-  <script>
-      setTimeout(function(){toggleCodeLang("HTTP")}, 350);
-      setTimeout(function(){groupCodeExamples()}, 350);
-      setTimeout(function(){generateLangOptions(["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"])}, 200);
-  </script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js?"></script>
 </html>
