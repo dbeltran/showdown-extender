@@ -1,0 +1,104 @@
+.test {
+	color: blue;
+}
+
+body {
+	font-family: "Trebuchet MS";
+}
+
+h2 { 
+	color: #FF5714;
+	padding-top: 20px;
+	padding-bottom: 10px;
+}
+
+div {	
+	*border: 2px solid blue;
+	*display: inline-block;
+}
+
+a {
+        text-decoration: none;
+}
+
+div#options-container {
+	position:fixed;
+	float: left;
+	width: 24%;
+}
+
+#toc { 
+	display: block;
+	padding: 5px;
+}
+
+#toc li {
+	list-style-type: none;
+	border: 1px solid grey;	
+	border-radius: 5px;
+	padding: 2px;
+}
+
+#toc li a {
+	font-size: small;
+	color: #408ad4;
+}
+
+#toc p {
+	color: grey;
+}
+
+#langs {
+	padding: 5px;
+}
+
+#content {
+	margin-left: 25%;
+	width: 75%;
+	padding: 5px;
+	word-wrap: break-word;
+}
+
+#content a {
+	color: #408ad4;
+}
+
+#content td {
+        border-top: 1px solid black;
+        padding: 4px;
+}
+
+#content pre.response {
+        display: block;
+        *border-bottom: 1px solid #a8acb4;
+        *border-left: 1px solid #a8acb4;
+        *border-right: 1px solid #a8acb4;
+	*background: #f7f7f7;
+	padding: 4px;
+	border: 0;
+}
+
+#content pre.prettyprint {
+        border:0;
+}
+
+#content .resource {
+	display: block;
+	background: #fbfbfb;
+	font-weight: bold;
+	padding: 4px;
+}
+
+#content div.lang {
+	padding: 5px;
+	background: #f7f7f7;
+        border-bottom: 1px solid #a8acb4;
+        border-top: 1px solid #a8acb4;
+}
+
+.codeexample {
+	width: 60%;
+	margin: 0 auto;
+	border: 1px solid #a8acb4;
+	border-radius: 5px;
+}
