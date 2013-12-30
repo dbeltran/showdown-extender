@@ -14,7 +14,7 @@ How Do I Use It?
 In index.html:
 
 	var apidoc = new ApiDoc({
-    		element: 'content', 
+    	element: 'content', 
 		url: 'docs.md',
 		toc: true,
 		langs: ["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"] 
