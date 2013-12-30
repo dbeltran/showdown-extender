@@ -20,10 +20,10 @@ In index.html:
 	langs: ["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"] 
     });`
 
-*`element` is the id of the element where the converted markdown will go.
-*`url` is the location of the markdowsn file to be converted.
-*`toc` can be true or false. If it is true, a table of contents will be generated from all of the H2 headers in the converted markdown.
-*`langs` is where the languages of the code samples should be placed. Currently, this takes extra work to function properly. See below.
+* `element` is the id of the element where the converted markdown will go.
+* `url` is the location of the markdowsn file to be converted.
+* `toc` can be true or false. If it is true, a table of contents will be generated from all of the H2 headers in the converted markdown.
+* `langs` is where the languages of the code samples should be placed. Currently, this takes extra work to function properly. See below.
 
 Using 'langs' parameter in Apidoc
 ---
@@ -56,10 +56,10 @@ GET /domains/score/{name}
 /REQRESEX
 `
 
-*`REQRESEX` specifies where the code example begins and ends.
-*`<div class="lang {language of code example}"` is what the generated buttons from the `langs` parameter will link to.
-*`>` specifies a request.
-*`<` specifies a response.
+* `REQRESEX` specifies where the code example begins and ends.
+* `<div class="lang {language of code example}"` is what the generated buttons from the `langs` parameter will link to.
+* `>` specifies a request.
+* `<` specifies a response.
 In this example, the `langs` parameter would be ["HTTP", "Curl", "JavaScript"]
 
 While this this is not ideal, this is the first phase. In the future, the code examples will be generated from templates provided by you and there will be no need for manually insterting the divs in an example. You will only have to specify a few response and request lines and the template(s) will be filled out.
