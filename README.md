@@ -13,12 +13,12 @@ How Do I Use It?
 
 In index.html:
 
-`var apidoc = new ApiDoc({
-    element: 'content', 
-	url: 'docs.md',
-	toc: true,
-	langs: ["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"] 
-    });`
+	var apidoc = new ApiDoc({
+    		element: 'content', 
+		url: 'docs.md',
+		toc: true,
+		langs: ["HTTP", "Curl", "JavaScript", "Node.js", "Python", "PHP", "Ruby"] 
+    	});
 
 * `element` is the id of the element where the converted markdown will go.
 * `url` is the location of the markdowsn file to be converted.
@@ -32,29 +32,29 @@ For now, 'langs' takes in an array of strings, where each string is the language
 
 Example:
 
-`
-REQRESEX
 
-GET /domains/score/{name}
+	REQRESEX
 
-<div class="lang HTTP">
-> This is an HTTP 
-> example request
-</div>
-<div class="lang Curl">
-> This is 
-> a Curl example 
-</div>
-<div class="lang JavaScript">
-> This is 
-> a JavaScript
-> example
-</div>
+	GET /domains/score/{name}
 
-< This is an example response
+	<div class="lang HTTP">
+	> This is an HTTP 
+	> example request
+	</div>
+	<div class="lang Curl">
+	> This is 
+	> a Curl example 
+	</div>
+	<div class="lang JavaScript">
+	> This is 
+	> a JavaScript
+	> example
+	</div>
 
-/REQRESEX
-`
+	< This is an example response
+
+	/REQRESEX
+
 
 * `REQRESEX` specifies where the code example begins and ends.
 * `<div class="lang {language of code example}"` is what the generated buttons from the `langs` parameter will link to.
